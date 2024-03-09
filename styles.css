@@ -1,18 +1,31 @@
 /*estilo pagina */
 header, footer {
     background-color: rgba(26, 25, 25, 0.7);
-    padding: 3%;
+    padding: 0.1%;
     
 }
+
+.titulo{
+  max-width: 45%;
+  margin: 25px auto;
+  background-color: #25273fe3; /* Fondo del cuadrp*/
+  padding: 1px;
+  border-radius: 30px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display:flexbox;
+}
+
 h1 {
   text-align: center; /*alineacion del texto*/
   font-family: 'Arial', sans-serif; /* Cambiar la fuente del título */
-  color: #3b444b; /* Color azul */
-  text-decoration:line-through;
-  margin-bottom: 1px; /* Espacio entre el título y el contenido */
+  color: #103c74; /* Color azul */
+  text-decoration: underline;
+  text-shadow: 1px 1px 2px black;
+  padding: auto;
 }
 #logo{
-float: left; /*alineacion del logo"a"*/
+  min-width: 15%;
+  max-width: 20%;
 }
 
 body {
@@ -25,7 +38,7 @@ body {
 .container {
   max-width: 65%;
   margin: 50px auto;
-  text-align: start;
+  text-align: center;
   background-color: #25273f9a; /* Fondo del cuadrp*/
   padding: 20px;
   border-radius: 60px; /* Bordes redondeados */
@@ -36,9 +49,10 @@ body {
 }
 
 textarea {
-  width: 100%;
+  width: 70%;
   height: 100px;
   margin-bottom: 10px;
+  margin-top:10px;
   padding: 10px;
   border: 1px solid #4e4a5f; /* Borde gris claro */
   border-radius: 5px; /* Bordes redondeados */
@@ -62,7 +76,8 @@ button:hover {
 
 #inputText, #outputText{
    margin-bottom: 20px; /* Espacio entre el área de salida y los botones */
-   width: 100%;
+   margin-top: 20px;
+   width: 80%;
    color:#2b2b2b
 }
 
@@ -85,6 +100,9 @@ footer{
   .container {
       max-width: 100%;
       padding: 10px;
+  }
+  h1{
+    font-size: small;
   }
 
   .box {
