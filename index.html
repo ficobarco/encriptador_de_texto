@@ -8,24 +8,31 @@
 </head>
 <body>
   <header>
-    <h1>Encriptador</h1>
+    <ul class="titulo"> 
+     <h1> <img id="logo" src="Logo.png"> Encriptador</h1>
+    </ul>
   </header>
     <main class="container"> <!--"container"=recuadro que agrupa-->
-      <ul class="cuadros">
+      <ul>
        <div class="inputs">
-         <textarea id="inputText" placeholder="Introduce el texto aquí"></textarea>
-       </div>
+           <textarea id="inputText" placeholder="Introduce el texto aquí"></textarea>
+              <div>
+                <button onclick="encriptar(); mostrarGif()">Encriptar</button>
+                <button onclick="desencriptar(); mostrarGif()">Desencriptar</button>
+              </div>
        <div class="outputs">
-          <textarea id="outputText" placeholder="Resultado" readonly></textarea>
+           <textarea id="outputText" placeholder="Resultado" readonly></textarea>
        </div>
-        <div class="buttons">
-         <button onclick="encriptar(); mostrarGif()">Encriptar</button>
-         <button onclick="desencriptar(); mostrarGif()">Desencriptar</button>
-        <button onclick="copiarTexto()">Copiar</button>
+        <div>
+           <button onclick="copiarTexto()">Copiar</button>
+           <button onclick="limpiarPantalla()">Limpiar</button>
         </div>
       </ul>
     </main>
   <script src="index.js"></script>
-  <footer></footer>
+  <footer>
+    <a href="https://github.com/ficobarco"><img id="git" src="github-mark-white.png"></a>
+    <p class="copy">&copy copyright Francisco Heron Díaz</p>
+  </footer>
 </body>
 </html>
