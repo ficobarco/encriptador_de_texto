@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Encriptador</h1>
+  </header>
+    <main class="container"> <!--"container"=recuadro que agrupa-->
+      <ul class="cuadros">
+       <div class="inputs">
+         <textarea id="inputText" placeholder="Introduce el texto aquí"></textarea>
+       </div>
+       <div id="gifContainer">
+         <img src="XOsX.gif" alt="GIF" width="200">
+       </div>
+       <div class="outputs">
+          <textarea id="outputText" placeholder="Resultado" readonly></textarea>
+       </div>
+        <div class="buttons">
+         <button onclick="encriptar(); mostrarGif()">Encriptar</button>
+         <button onclick="desencriptar(); mostrarGif()">Desencriptar</button>
+        <button onclick="copiarTexto()">Copiar</button>
+        </div>
+      </ul>
+    </main>
+  <script src="index.js"></script>
+  <footer></footer>
+</body>
+</html>

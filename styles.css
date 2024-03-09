@@ -1,0 +1,97 @@
+/*estilo pagina */
+header, footer {
+    background-color: rgba(26, 25, 25, 0.7);
+    padding: 3%;
+    
+}
+h1 {
+  text-align: center; /*alineacion del texto*/
+  font-family: 'Arial', sans-serif; /* Cambiar la fuente del título */
+  color: #3b444b; /* Color azul */
+  text-decoration:line-through;
+  margin-bottom: 1px; /* Espacio entre el título y el contenido */
+}
+#logo{
+float: left; /*alineacion del logo"a"*/
+}
+
+body {
+  background-image: url('fondo.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 65%;
+  margin: 50px auto;
+  text-align: start;
+  background-color: #25273f9a; /* Fondo del cuadrp*/
+  padding: 20px;
+  border-radius: 60px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex;
+  flex-direction: column; /* Establecer dirección de visualización en columna */
+  align-items: center; /* Centrar los elementos horizontalmente */
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #4e4a5f; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #dbdbdb;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #54a2d6; /* Color de fondo azul */
+  color: #ffffff; /* Color del texto blanco */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+button:hover {
+  background-color: #307e88; /* Color de fondo azul más oscuro al pasar el mouse */
+}
+
+#inputText, #outputText{
+   margin-bottom: 20px; /* Espacio entre el área de salida y los botones */
+   width: 100%;
+   color:#2b2b2b
+}
+
+footer{
+  text-align: center;
+}
+#git{
+
+  width: 3%;
+}
+#git:hover{
+  width: 5%;
+}
+.copy{
+  color: #ffffff;
+  font-size: 15px;   
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .container {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .box {
+      width: calc(50% - 20px);
+  }
+
+  .button {
+      margin: 10px;
+  }
+}
